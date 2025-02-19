@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.top-bar {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    margin: 0 50px;
+}
+
+.sidebar {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    margin-left: 220px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+
+.news-updates {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.news-updates h2 {
+    background-color: #666;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between images */
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 45%; /* Adjust size as needed */
+    height: auto;
+}
