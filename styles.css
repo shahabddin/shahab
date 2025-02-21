@@ -118,6 +118,11 @@ footer {
     height: auto;
 }
 
+a:link, a:visited {
+    color: #0000EE; /* Use your desired color */
+    text-decoration: none; /* or any style you prefer */
+  }
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
