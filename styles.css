@@ -91,13 +91,6 @@ main {
     text-align: justify;
 }
 
-/* .news-updates h2 {
-    background-color: #666;
-    color: white;
-    padding: 10px;
-    text-align: center;
-} */
-
 footer {
     text-align: center;
     background-color: #174861;
@@ -122,32 +115,3 @@ a:link, a:visited {
     color: #0000EE; /* Use your desired color */
     text-decoration: none; /* or any style you prefer */
   }
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .sidebar ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .sidebar ul li {
-        padding: 0 10px;
-    }
-
-    .content {
-        margin-left: 0;
-        padding: 10px;
-    }
-}
