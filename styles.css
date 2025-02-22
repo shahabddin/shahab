@@ -115,3 +115,19 @@ a:link, a:visited {
     color: #0000EE; /* Use your desired color */
     text-decoration: none; /* or any style you prefer */
   }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    /* 16:9 aspect ratio => 9 / 16 * 100 = 56.25% */
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
