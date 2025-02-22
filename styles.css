@@ -13,8 +13,6 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    /* position: fixed;
-    width: 100%; */
 }
 
 main {
@@ -131,3 +129,63 @@ a:link, a:visited {
     width: 100%;
     height: 100%;
   }
+
+@media screen and (max-width: 768px) {
+
+    /* Hide sidebar by default and style for sliding in */
+    main {
+        margin-right: 0;
+        margin-left: 18%;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .top-bar {
+        /* padding: 10px; */
+        font-size: 18px;
+    }
+
+    .profile-picture img {
+        width: 130px;
+        height: auto;
+    }
+
+    .social-icons img {
+        width: 15px;
+    }
+
+    .sidebar ul li {
+        margin-left: -15px;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        background-color: white;
+        /* padding: 0px; */
+        /* margin-left: 200px; */
+    }
+
+    .sidebar {
+        background-color: #444444;
+        color: white;
+        padding: 20px;
+        width: 100px;
+        height: 200vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    /* When sidebar has class 'show', slide it in */
+    .sidebar.show {
+        left: 0;
+    }
+
+    /* Adjust main content so it occupies full width */
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
