@@ -192,7 +192,7 @@ a:link, a:visited {
     }
 
     .profile-picture img {
-        width: 130px;
+        width: 120px;
         height: auto;
     }
 
@@ -204,29 +204,13 @@ a:link, a:visited {
         margin-left: -15px;
     }
 
-    /* .main-content {
-        flex-grow: 1;
-        background-color: white;
-    } */
-
-    /* .sidebar {
-        padding: 20px;
-        width: 100px;
-        height: 200vh;
-        position: fixed;
-        left: 0;
-        top: 0;
-        /* display: none; */
+    .image-container {
+        gap: 10px; /* Adjust spacing between images */
+        margin-top: 10px;
     }
 
-    /* When sidebar has class 'show', slide it in */
-    .sidebar.show {
-        left: 0;
-    } */
-
-    /* Adjust main content so it occupies full width */
-    .main-content {
-        margin-left: 0;
-        padding: 10px;
+    .image-container img {
+        max-width: 48%; /* Adjust size as needed */
+        height: auto;
     }
 }
