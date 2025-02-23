@@ -173,6 +173,7 @@ a:link, a:visited {
     /* Adjust main content so it occupies full width */
     .main-content {
         margin-left: 0;
+        margin-left: 0;
         padding: 10px;
     }
 
