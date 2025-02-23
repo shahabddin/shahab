@@ -130,12 +130,55 @@ a:link, a:visited {
     height: 100%;
   }
 
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    /* padding: 10px; */
+}
+
+
 @media screen and (max-width: 768px) {
 
-    /* Hide sidebar by default and style for sliding in */
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        left: 10px;
+        margin-top: -5px;
+        /* top: 10px; */
+        z-index: 1000; /* Make sure it’s on top */
+    }
+
+    .sidebar {
+        width: 120px;
+        height: 100vh;
+        background: #444444;
+        position: fixed;
+        left: -250px; /* Off-screen */
+        top: 0;
+        transition: left 0.3s ease-in-out;
+        z-index: 999; /* Below the button */
+        padding-top: 30px;
+    }
+
+    /* When sidebar has class 'show', slide it in */
+    .sidebar.show {
+        left: 0;
+    }
+
+    /* Adjust main content so it occupies full width */
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
     main {
         margin-right: 0;
-        margin-left: 18%;
+        margin-left: 8%;
     }
 
     body {
@@ -160,28 +203,25 @@ a:link, a:visited {
         margin-left: -15px;
     }
 
-    .main-content {
+    /* .main-content {
         flex-grow: 1;
         background-color: white;
-        /* padding: 0px; */
-        /* margin-left: 200px; */
-    }
+    } */
 
-    .sidebar {
-        background-color: #444444;
-        color: white;
+    /* .sidebar {
         padding: 20px;
         width: 100px;
         height: 200vh;
         position: fixed;
         left: 0;
         top: 0;
+        /* display: none; */
     }
 
     /* When sidebar has class 'show', slide it in */
     .sidebar.show {
         left: 0;
-    }
+    } */
 
     /* Adjust main content so it occupies full width */
     .main-content {
