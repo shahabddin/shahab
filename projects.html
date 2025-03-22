@@ -28,23 +28,38 @@
             <div>
                 <h2 style="background-color: #546396; color: white; padding: 10px; text-align: center;">Projects</h2>
                 <article class="news-updates">
+                    <h3>Development of an Islam specific chatbot based on LLMs</h3>
+                    <p><em>Duration: March 2025 till date</em></p>
+                    <p>This is a side project that I started because of a dire need of easy access to authentic
+                        Islamic information. The chatbot uses Paraphrase Multilingual MiniLM L12 V2 for sentence embedding and mT5 
+                        model (Multilingual varient of the T5 Model) as the base model for query and response generation. It is bieng 
+                        trained on a dataset of Islamic books, Hadiths and Quranic verses from scanned pdfs. The chatbot is being 
+                        trained on Urdu, Arabic, Farsi and English texts, as most of the Islamic corpus is in these languages, but it 
+                        can communicate in many languages as is the capability of the mT5 model. The chatbot will also be integrated 
+                        with voice recognition system for a more simple and easy use.</p>
+                    </p>
+                </article>
+                <article class="news-updates">
                     <h3>Development of a portable scanning system for the detection of sub-surface rivet-related defects in aircraft
                         structures using Lock-in Thermography</h3>
                     <p><em>Duration: June 2023 till date</em></p>
                     <p>This project relates to the development of a novel Lock-In Thermography-based scanning system to detect 
                         subsurface defects in aircraft rivets. The system includes a customized thermographic device 
-                        consisting of a thermal camera, heating source, synchronized control circuitry, and an indiginously developed
+                        consisting of a thermal camera (IRS320S), heating source (Halogen Bulbs), synchronized control circuitry, 
+                        and an indiginously developed
                         image processing based software utilizing the Discrete Wavelet Transform, augmented by spatial gradient 
                         and mean filtering methods. The software is integrated into a portable robotic arm (developed in-house),
                         which is wirelessly controlled using a custom-made GUI from a tablet. This robotic arm can scan the inside of
                         engine intake as well as other areas of aircraft for defective rivet detection.</p>
+                    <p>
+                        This is a 16 million PKR (57000 USD) project managed and completed by 2 research assistants including me, and
+                        supervised first by Dr. Haris Ali Khan and then by Dr. Zahid Ahmed Qureshi of NUST. This device will prevent almost 
+                        500 million USD loss annually which is currently being faced by the Pakistan aviation industry due to faulty rivets. 
+                    </p>
                     <div>
                         <img src="media/bot3.jpg" alt="ncra" style="display: inline-block; margin-left: 0; width: 45%;">
                         <div style="width: 54%; margin-right: 0; display: inline-block;">
                             <img src="media/bot.png" alt="ncra" style="display: block; margin-left: 0; width: 100%;">
-                            <!-- <video style="width: 100%;" autoplay muted playsinline loop controls>
-                                <source src="media/bot1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video> -->
                             <div class="video-container">
                                 <iframe 
                                 src="https://www.youtube.com/embed/yKNUuV-DbZQ?autoplay=1&mute=1&loop=1&playlist=yKNUuV-DbZQ&controls=1" 
@@ -64,10 +79,6 @@
                     <p>The contractors' information regarding their contracts with the College of Aeronautical Engineering (CAE), including
                         the contract value, line item details, expected date of delivery etc. are all managed through a customised 
                         GUI. New contract information can be added and existing updated based on the contract timeline.</p>
-                        <!-- <div style="text-align: center;"> -->
-                        <!-- <video style="width: 70%;" autoplay muted playsinline loop controls>
-                            <source src="media/gui.mp4" type="video/mp4">
-                            Your browser does not support the video tag.</video></div> -->
                         <div class="video-container">
                             <iframe 
                             src="https://www.youtube.com/embed/pcSLsvCl5Mk?autoplay=1&mute=1&loop=1&playlist=pcSLsvCl5Mk&controls=1" 
@@ -85,7 +96,7 @@
                     <p>The most crucial part of the portable scanning system for defect detection in aircraft structures is the 
                         Lock-in Thermography system, in which the intensity of the halogen lamps is modulated according to the 
                         selected frequency. This system is indiginously developed using Raspberry Pi as the main control unit, along 
-                        with a digital voltage regulator, ESP32 and a Thermal camera. The ESP32 module modulates the AC voltage 
+                        with a digital voltage regulator (RobotDyn), ESP32 and a Thermal camera. The ESP32 module modulates the AC voltage 
                         through the digital voltage regulator, upon recieving a signal from the GUI created in Raspberry Pi. At the 
                         same time, the Thermal Camera starts capturing the thermal profile of the target area.</p>
                         <div class="video-container">
@@ -121,10 +132,6 @@
                         to transmit images to a larger screen for magnification. This Otoscope is designed by using an endoscope camera connected to a Raspberry
                         Pi 4B board, and a customised GUI to control its functionality. It is powered by a rechargable battery, which lasts for about 2 hours 
                         once fully charged.</p>
-                        <!-- <div style="text-align: center;">
-                            <video style="width: 70%;" autoplay muted playsinline loop controls>
-                                <source src="media/otoscope.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video></div> -->
                         <div class="video-container">
                             <iframe 
                             src="https://www.youtube.com/embed/cB036tztnIo?autoplay=1&mute=1&loop=1&playlist=cB036tztnIo&controls=1" 
