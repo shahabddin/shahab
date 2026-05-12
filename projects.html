@@ -30,19 +30,20 @@
                 <article class="news-updates">
                     <h3>Development of an Islam specific chatbot based on LLMs</h3>
                     <p><em>Duration: March 2025 till date</em></p>
-                    <p>This is a side project that I started because of a dire need of easy access to authentic
-                        Islamic information. The chatbot uses Paraphrase Multilingual MiniLM L12 V2 for sentence embedding and mT5 
-                        model (Multilingual varient of the T5 Model) as the base model for query and response generation. It is bieng 
-                        trained on a dataset of Islamic books, Hadiths and Quranic verses from scanned pdfs. The chatbot is being 
-                        trained on Urdu, Arabic, Farsi and English texts, as most of the Islamic corpus is in these languages, but it 
-                        can communicate in many languages as is the capability of the mT5 model. The chatbot will also be integrated 
-                        with voice recognition system for a more simple and easy use.</p>
+                    <p>This is a side project that I started because of a dire need of easy access to authentic Islamic information. 
+                        The chatbot uses Paraphrase Multilingual MPNet Base V2 for sentence embedding and Ollama (llama3) as the local 
+                        LLM for query and response generation via Retrieval-Augmented Generation (RAG). Text is extracted from scanned 
+                        PDFs using Chandra OCR 2, a specialized 4B-parameter OCR model chosen for its accuracy with Arabic script and low 
+                        hallucination rates. The extracted text is chunked and stored in ChromaDB for semantic search. It is being trained 
+                        on authentic Islamic books such as Alrheeq-Ul-Makhtoom, with support for Urdu, Arabic, Farsi, Pashto and English 
+                        texts, as most of the Islamic corpus is in these languages. The chatbot will also be integrated with a voice 
+                        recognition system for a more simple and easy use.</p>
                     </p>
                 </article>
                 <article class="news-updates">
                     <h3>Development of a portable scanning system for the detection of sub-surface rivet-related defects in aircraft
                         structures using Lock-in Thermography</h3>
-                    <p><em>Duration: June 2023 till date</em></p>
+                    <p><em>Duration: June 2023 to January 2025</em></p>
                     <p>This project relates to the development of a novel Lock-In Thermography-based scanning system to detect 
                         subsurface defects in aircraft rivets. The system includes a customized thermographic device 
                         consisting of a thermal camera (IRS320S), heating source (Halogen Bulbs), synchronized control circuitry, 
@@ -148,7 +149,7 @@
     </main><br>
     
     <footer>
-        <p>&copy; 2025 Shahab Uddin</p>
+        <p>&copy; 2026 Shahab Uddin</p>
     </footer>
 </body>
 </html>
